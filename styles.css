@@ -96,11 +96,10 @@ section {
     align-self: start;
 }
 
-#Projects h2,
-#Projects input,
-#Projects p {
-    display: block;
-    /* Ensure the header, input, and paragraph are not flex items */
+@media (max-width: 600px) {
+    #Projects div {
+        flex-direction: column;
+    }
 }
 
 #Projects article {
@@ -120,6 +119,12 @@ section {
     margin-bottom: 0;
 }
 
+#skills ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    /* Adjust the value as needed */
+}
+
 /* Contact section styling */
 #contact form {
     display: flex;
@@ -127,6 +132,7 @@ section {
     max-width: 600px;
     margin: 0 auto;
 }
+
 
 #contact label {
     margin-top: 10px;
